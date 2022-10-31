@@ -2,11 +2,11 @@
 {
     public class StoreManager
     {
-        public Cart? Cart { get; private set; }
         public StoreManager()
         {
             Cart = new Cart();
         }
+        public Cart? Cart { get; private set; }
         public void Show(Product[] products)
         {
             Console.WriteLine(string.Format("{0, -3} {1, -11} {2, -3}", "ID", "Name", "Price"));
